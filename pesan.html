@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Toko Ga Mau Rugi - Booking Form</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body,
+    html {
+      height: 100%;
+      margin: 0;
+      font-family: Arial, sans-serif;
+      color: black;
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+    }
+
+    form {
+      text-align: left;
+      width: 50%;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      background-color: #f2f2f2;
+    }
+
+    input,
+    label,
+    select {
+      display: block;
+      width: 100%;
+      margin-bottom: 10px;
+      padding: 8px;
+      border-radius: 3px;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+    }
+
+    input[type="submit"] {
+      background-color: #ff0000;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #ff0000;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+
+    table,
+    th,
+    td {
+      border: 1px solid #f50101;
+      padding: 10px;
+    }
+
+    th {
+      background-color: #000000;
+      color: white;
+    }
+
+    img {
+      max-width: 100px;
+    }
+  </style>
+</head>
+
+<body>
+  <header class="header">
+    <h1 class="header-title">Toko Ga Mau Rugi</h1>
+    <nav>
+      <a href="index.html">Beranda</a>
+      <a href="promotions.html">Promotion</a>
+      <a href="about.html">Tentang Kami</a>
+      <a href="pesan.html">Pesan</a>
+      <a href="contact.html">Kontak</a>
+    </nav>
+  </header>
+  <main class="container">
+    <form>
+      <label for="full-name">Full Name</label>
+      <input type="text" id="full-name" name="full-name" />
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" />
+
+      <label for="phone-number">Phone Number</label>
+      <input type="tel" id="phone-number" name="phone-number" />
+
+      <label for="pick-date">Pick a Date</label>
+      <input type="date" id="pick-date" name="pick-date" />
+
+      <label for="num-of-people">How many persons? (isi dengan angka)</label>
+      <input type="number" id="num-of-people" name="num-of-people" />
+
+      <label>Spare Part</label>
+      <select name="sparepart" id="sparepart">
+        <option value="99000">Spare part mesin berkualitas tinggi | Rp. 99.000</option>
+        <option value="89000">Spare part elektrik tahan lama | Rp. 89.000</option>
+        <option value="29000">Aksesoris motor keren dan fungsional | Rp. 29.000</option>
+      </select>
+      <h3>Total Payment : $ <span id="total"> </span></h3>
+      <a class="button" onclick="prosses()">Pesan</a>
+    </form>
+  </main>
+  <main>
+    <tr>
+  </main>
+  <footer>
+    <h3>Created by Syafa</h3>
+  </footer>
+  <script src="script.js"></script>
+
+</body>
+
+</html>

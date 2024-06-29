@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Toko Ga Mau Rugi</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* Styling for specific text */
+    .welcome-text {
+      color: white;
+    }
+
+    /* Styling for header */
+    .header {
+      background-color: red;
+      color: white;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 50px;
+      display: flex;
+      align-items: center;
+      padding: 0 10px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .header-title {
+      margin: 0 14px;
+      font-size: 18px;
+    }
+
+    nav {
+      position: absolute;
+      right: 0;
+      display: flex;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: white;
+      padding: 15px;
+    }
+  </style>
+</head>
+
+<body>
+  <header class="header">
+    <h1 class="header-title">Toko Ga Mau Rugi</h1>
+    <nav>
+      <a href="index.html">Beranda</a>
+      <a href="promotions.html">Promotion</a>
+      <a href="about.html">Tentang Kami</a>
+      <a href="pesan.html">Pesan</a>
+      <a href="contact.html">Kontak</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="jumbotron">
+      <div>
+        <h1>TOKO GA MAU RUGI</h1>
+        <h2>Selamat datang di Toko Ga Mau Rugi</h2>
+        <p class="welcome-text">
+          Toko Ga Mau Rugi adalah toko online yang menyediakan berbagai spare
+          part berkualitas untuk motor anda. Kami juga nggak mau rugi. Jadi
+          jangan harap diskon besar-besaran 😁
+        </p>
+      </div>
+      <div>
+        <img src="image/Firefly spare part 47907.jpg" alt="sparepart" />
+      </div>
+    </div>
+
+    <div class="main-container">
+      <div class="package-container">
+        <img src="image/Suku Cadang Caterpillar.jpg" alt="Suku cadang mesin" />
+        <p>Suku cadang mesin</p>
+        <h4>Harga Rp. 99.000</h4>
+        <button class="left">Beli</button>
+      </div>
+      <div class="package-container">
+        <img src="image/63191-suku-cadang-otomotif.jpg" alt="Suku cadang elektrik" />
+        <p>Suku cadang elektrik</p>
+        <h4>Harga Rp. 89.000</h4>
+        <button class="left">Beli</button>
+      </div>
+      <div class="package-container">
+        <img src="image/aksesoris-motor-baru.jpg" alt="Aksesoris motor" />
+        <p>Aksesoris motor</p>
+        <h4>Harga Rp. 69.000</h4>
+        <button class="left">Beli</button>
+      </div>
+    </div>
+
+    <div class="main-container">
+      <div class="package-container">
+        <img src="image/JPEG Image velg_motor.jpeg" alt="Velg motor" />
+        <p>Velg motor</p>
+        <h4>Harga Rp. 399.000</h4>
+        <button class="left">Beli</button>
+      </div>
+      <div class="package-container">
+        <img
+          src="image/led_lights_for_motorcycles.jpg"
+          alt="Lampu motor" />
+        <p>Lampu motor</p>
+        <h4>Harga Rp. 89.000</h4>
+        <button class="left">Beli</button>
+      </div>
+      <div class="package-container">
+        <img src="image//bg-filter-udara-yamaha.jpg" alt="Saringan motor" />
+        <p>Saringan motor</p>
+        <h4>Harga Rp. 159.000</h4>
+        <button class="left">Beli</button>
+      </div>
+    </div>
+
+    <h1 class="title">Produk Detail</h1>
+    <div class="table">
+      <table>
+        <thead>
+          <tr>
+            <th>Product</th>
+            <th>Description</th>
+            <th>Price</th>
+            <th>Order</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <img src="image/Suku Cadang Caterpillar.jpg" alt="Suku cadang mesin" />
+            </td>
+            <td>
+              Motor suka ngadat dan bikin pusing? Ganti suku cadang mesinnya
+              di Toko Ga Mau Rugi! Dijamin motor Anda kembali prima dan siap
+              tempur di jalanan. Yuk, buruan cek sekarang, biar motor nggak
+              bikin drama lagi!
+            </td>
+            <td>Rp. 99.000</td>
+            <td><button onclick="goToBooking()">Beli Sekarang</button></td>
+          </tr>
+
+          <tr>
+            <td>
+              <img src="image/63191-suku-cadang-otomotif.jpg" alt="Suku cadang mesin" />
+            </td>
+            <td>
+              Mesin elektrik motor Anda sering ngadat? Tenang, Toko Ga Mau
+              Rugi punya solusinya! Dengan spare part mesin elektrik dari
+              kami, motor Anda akan berasa kayak baru keluar dari showroom.
+              Yuk, ganti sekarang, biar motor nggak mogok di tengah jalan!/td>
+            </td>
+            <td>Rp. 89.000</td>
+            <td><button onclick="goToBooking()">Beli Sekarang</button></td>
+          </tr>
+
+          <tr>
+            <td>
+              <img src="image/aksesoris-motor-baru.jpg" alt="Aksesoris motor" />
+            </td>
+            <td>
+              Halo, Bro & Sis! Punya motor keren tapi rasanya ada yang kurang?
+              Tenang, kita punya solusi buat kamu! Kenalin, aksesoris motor
+              dari Toko Ga Mau Rugi yang nggak cuma keren tapi juga fungsional
+              abis!
+            </td>
+            <td>Rp. 29.000</td>
+            <td><button onclick="goToBooking()">Beli Sekarang</button></td>
+          </tr>
+
+          <tr>
+            <td><img src="image/JPEG Image velg_motor.jpeg" alt="velg_motor" /></td>
+            <td>
+              Mau motor kamu jadi pusat perhatian di jalan? Ganti velg lama
+              dengan velg motor dari Toko Ga Mau Rugi! Dijamin bikin motor
+              makin keren dan gaya. Yuk, ganti sekarang, biar nggak cuma
+              motornya yang jalan, tapi gaya juga!
+            </td>
+            <td>Rp. 499.000</td>
+            <td><button onclick="goToBooking()">Beli Sekarang</button></td>
+          </tr>
+
+          <tr>
+            <td>
+              <img
+                src="image/Suku Cadang Caterpillar.jpg"
+                alt="lampu motor" />
+            </td>
+            <td>
+              Capek nyasar di malam hari gara-gara lampu motor redup? Pasang
+              lampu motor dari Toko Ga Mau Rugi! Terang benderang kayak siang
+              bolong, bikin kamu nggak perlu meraba-raba lagi. Yuk, pasang
+              sekarang, biar perjalanan makin asik dan bebas gelap!
+            </td>
+            <td>Rp. 89.000</td>
+            <td><button onclick="goToBooking()">Beli Sekarang</button></td>
+          </tr>
+
+          <tr>
+            <td>
+              <img src="image/63191-suku-cadang-otomotif.jpg" alt="Saringan motor" />
+            </td>
+            <td>
+              Mau mesin motor tetap 'segar' dan nggak cepat 'haus'? Pakai
+              saringan motor dari Toko Ga Mau Rugi! Bikin motor Anda tetep
+              lari kencang tanpa drama. Buruan cek sekarang, biar motor nggak
+              rewel lagi!
+            </td>
+            <td>Rp. 259.000</td>
+            <td><button onclick="goToBooking()">Beli Sekarang</button></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </main>
+
+  <footer>
+    <script src="script.js"></script>
+  </footer>
+</body>
+
+</html>

@@ -1,0 +1,137 @@
+h2, p {
+    color: hwb(0 0% 15%);
+}
+nav {
+    position: absolute;
+    right: 0;
+    display: flex;
+}
+a {
+    text-decoration: none;
+    color: white;
+    float: left;
+    padding: 15px;
+}
+header {
+    background-color: #ff0000;
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 50px;
+    display: flex;
+    align-items: center; 
+    padding: 0 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header-title {
+    color: white;
+    margin: 0 14px;
+    font-size: 18px;
+}
+
+footer h3 {
+    color: hsl(350, 65%, 49%);
+}
+
+body {
+    background-color: black;
+    color: white;
+    margin: 0;
+}
+
+h1 {
+    color: red;
+    font-size: 50px;
+    text-align: center;
+}
+
+.jumbotron {
+    background-color: black;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.jumbotron img {
+    width: 300px;
+    margin: 30px;
+}
+
+.jumbotron h3, .jumbotron p {
+    color: #d02525;
+}
+
+.main-container {
+    display: flex;
+    justify-content: center;
+}
+
+.package-container {
+    margin: 20px;
+    padding: 16px;
+    border: 3px solid #fff;
+    border-radius: 16px;
+    box-shadow: 5px 5px 10px #efecec;
+}
+
+.package-container p {
+    color: #fff;
+}
+
+.package-container img {
+    width: 300px;
+}
+
+button, .button {
+    background-color: cyan;
+    padding: 10px;
+    color: white;
+    border-radius: 10px;
+    border: none;
+}
+
+.left {
+    margin-left: 60px;
+}
+
+table, th, td, tr {
+    border: 1px solid red;
+    border-collapse: collapse;
+    padding: 10px;
+}
+
+th {
+    background-color: rgb(247, 18, 18);
+    color: white;
+}
+
+.table {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.table img {
+    width: 200px;
+}
+
+a:hover {
+    color: black;
+}
+
+select {
+    width: 100%;
+    display: inline-block;
+    margin-bottom: 10px;
+    padding: 25px;
+    border-radius: 3px;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: rgb(184, 245, 225);
+}
